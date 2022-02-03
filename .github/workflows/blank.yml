@@ -23,6 +23,16 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
+      
+      - name: Create GitHub Secret Action
+      - uses: gliech/create-github-secret-action@v1.4.9
+        with:
+          name: SECRET 
+          value: VALUE
+          location: actions
+          org_visibility: all
+          pa_token: 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
+      
 
       
       
