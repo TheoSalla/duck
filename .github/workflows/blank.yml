@@ -23,21 +23,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - name: Create GitHub Secret Action
-  # You may pin to the exact commit or the version.
-  # uses: gliech/create-github-secret-action@2c1bbe478d95aa01e374802e9d97d81ca73914ed
-      - uses: gliech/create-github-secret-action@v1.4.9
-        with:
-        # Name of the secret that you want to create/update
-          name: SECRET 
-        # Value of the secret that you want to create/update
-          value: VALUE
-        # Name of a GitHub repository or organization where you want to create/update a secret
-          location: actions
-        # Visibility setting for organization secrets. Accepts `all`, `private` or a comma-seperated list of GitHub repository IDs
-          org_visibility: all
-        # Personal access token with permission to modify repository or organization secrets
-          pa_token: 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
+
       
       
 
