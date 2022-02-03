@@ -29,9 +29,8 @@ jobs:
         with:
           name: SECRET 
           value: VALUE
-          location: actions
-          org_visibility: all
           pa_token: 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
+          
       
 
       
