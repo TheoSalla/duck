@@ -20,4 +20,4 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore folder/folder.csproj
     - name: Build
-      run: dotnet run ${{secrets.HELLO}} --project folder/folder.csproj
+      run: dotnet run ${{secrets.THEO0}} --project folder/folder.csproj
