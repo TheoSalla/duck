@@ -18,6 +18,6 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore folder/folder.csproj
     - name: Build
       run: dotnet run ${{secrets.CREATED_DUCK}} --project folder/folder.csproj
