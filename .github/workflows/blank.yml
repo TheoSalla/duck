@@ -29,6 +29,28 @@ jobs:
           value: VALUE
           pa_token: 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
           
+          
+      - uses: mmercan/actions-set-secret@v/4.0.0
+        with:
+    # Secr
+         name: HERE_SECRET
+    # Secret value
+         value: Secret
+    # environment name
+         environment: Dev
+    # Repository access token
+         token: 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 
+    
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
       
 
       
