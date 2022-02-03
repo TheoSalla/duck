@@ -27,7 +27,7 @@ jobs:
         with:
           name: SECRET 
           value: VALUE
-          pa_token: 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
+          pa_token: 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
           
       
 
