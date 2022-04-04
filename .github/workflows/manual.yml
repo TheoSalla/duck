@@ -34,7 +34,7 @@ jobs:
        with:
         files: folder/app.json  
        env:
-        Name: "Theo"
+        Name:  ${{ inputs.name }}
         Location: ${{ secrets.LOCATION }}
      
      - name: Read Json
