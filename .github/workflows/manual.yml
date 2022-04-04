@@ -29,7 +29,7 @@ jobs:
      - name: Variable Substitution
        uses: microsoft/variable-substitution@v1
        with:
-        files: 'folder/app.json'  
+        files: 'duck/folder/app.json'  
        env:
         Name: "Theo"
         Location: "Södertälje"
