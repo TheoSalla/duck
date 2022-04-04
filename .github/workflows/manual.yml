@@ -26,8 +26,19 @@ jobs:
     runs-on: ubuntu-latest
     environment: Test
     steps:
-      - name: Step 1
-        run: |
+     - name: Variable Substitution
+       uses: microsoft/variable-substitution@v1
+       with:
+        files: 'appsettings.json'  
+       env:
+        Name: "Theo"
+        Location: "Södertälje"
+     
+     - name: Read Json
+       run: echo appsettings.json
+      
+     - name: Check if secret exist
+       run: |
           if [ "${{ secrets.TEST_SECRET }}" == "123" ]; then
             echo "Match"
           else
