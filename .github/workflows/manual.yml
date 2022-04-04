@@ -38,7 +38,7 @@ jobs:
         Location: "Södertälje"
      
      - name: Read Json
-       run: echo appsettings.json
+       run: cat appsettings.json
       
      - name: Check if secret exist
        run: |
