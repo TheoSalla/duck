@@ -16,8 +16,19 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  Job1:
+    runs-on: ubuntu-latest
+    environment: Test
+    steps:
+      - name: Step 1
+        run: |
+          if [ "${{ secrets.TEST_SECRET }}" == "123" ]; then
+            echo "Match"
+          else
+            echo "Not matched"
+          fi
   # This workflow contains a single job called "greet"
-  greet_job:
+  Job2:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     environment: Test
