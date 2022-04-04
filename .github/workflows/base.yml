@@ -22,7 +22,7 @@ jobs:
   call_workflow:
    uses: ./.github/workflows/manual.yml
    with: 
-    name: "Theodor"
+    name: ${{ github.event.inputs.name }}
    secrets:
       TEST_SECRET: ${{ secrets.TEST_SECRET }}
       NAME : ${{ secrets.NAME }}
