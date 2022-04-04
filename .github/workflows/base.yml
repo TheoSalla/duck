@@ -20,7 +20,7 @@ on:
 jobs:
 
   call_workflow:
-   uses: TheoSalla/duck/.github/workflows/manual.yml@main
+   uses: ./.github/workflows/manual.yml
    with: 
     name: "Theodor"
 
