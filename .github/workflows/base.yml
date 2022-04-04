@@ -20,7 +20,7 @@ on:
 jobs:
 
   call_workflow:
-   uses: TheoSalla/duck/blob/main/.github/workflows/manual.yml@main
+   uses: TheoSalla/duck/.github/workflows/manual.yml@main
 
   # This workflow contains a single job called "greet"
   greet_job:
