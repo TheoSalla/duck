@@ -35,7 +35,7 @@ jobs:
         files: folder/app.json  
        env:
         Name: "Theo"
-        Location: "Södertälje"
+        Location: ${{ secrets.LOCATION }}
      
      - name: Read Json
        run: cat appsettings.json
