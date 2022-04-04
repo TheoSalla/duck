@@ -23,6 +23,8 @@ jobs:
    uses: ./.github/workflows/manual.yml
    with: 
     name: "Theodor"
+   secrets:
+      TEST_SECRET: ${{ secrets.TEST_SECRET }}
 
   # This workflow contains a single job called "greet"
   greet_job:
