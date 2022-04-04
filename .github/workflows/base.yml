@@ -21,6 +21,8 @@ jobs:
 
   call_workflow:
    uses: TheoSalla/duck/.github/workflows/manual.yml@main
+   with: 
+    name: "Theodor"
 
   # This workflow contains a single job called "greet"
   greet_job:
