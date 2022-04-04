@@ -25,6 +25,7 @@ jobs:
     name: "Theodor"
    secrets:
       TEST_SECRET: ${{ secrets.TEST_SECRET }}
+      NAME : ${{ secrets.NAME }}
 
   # This workflow contains a single job called "greet"
   greet_job:
