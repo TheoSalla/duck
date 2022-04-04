@@ -6,11 +6,6 @@ name: Manual workflow
 # or API.
 on:
   workflow_call:
-   inputs:
-    name:
-     description: the name
-     type: string
-     default: "Theo"
    secrets:
       TEST_SECRET:
         required: true
