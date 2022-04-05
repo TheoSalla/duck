@@ -29,7 +29,7 @@ jobs:
        with:
         files: folder/app.json  
        env:
-        Name:  ${{ inputs.name }}
+        Name:  '${{ inputs.name }}BLOP HELLO DUCK IM COME AFTER' 
         Location: ${{ secrets.LOCATION }}
      
      - name: Read Json
