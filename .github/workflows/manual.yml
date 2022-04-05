@@ -33,7 +33,7 @@ jobs:
        with:
         files: folder/app.json  
        env:
-        Name:  ${{ inputs.name }} 
+        Name:  "${{ inputs.name }} blop"
         Location: ${{ secrets.LOCATION }}
      
      - name: Read Json
